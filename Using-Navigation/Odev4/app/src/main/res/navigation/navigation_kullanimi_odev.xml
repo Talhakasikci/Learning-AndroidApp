@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_kullanimi_odev"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.talhakasikci.odev4.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_fragment_A"
+            app:destination="@id/fragment_A" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragment_X"
+            app:destination="@id/fragment_X" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_A"
+        android:name="com.talhakasikci.odev4.Fragment_A"
+        android:label="fragment__a"
+        tools:layout="@layout/fragment__a" >
+        <action
+            android:id="@+id/action_fragment_A_to_fragment_B"
+            app:destination="@id/fragment_B" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_B"
+        android:name="com.talhakasikci.odev4.Fragment_B"
+        android:label="fragment__b"
+        tools:layout="@layout/fragment__b" >
+        <action
+            android:id="@+id/action_fragment_B_to_fragment_Y"
+            app:destination="@id/fragment_Y" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_X"
+        android:name="com.talhakasikci.odev4.Fragment_X"
+        android:label="fragment__x"
+        tools:layout="@layout/fragment__x" >
+        <action
+            android:id="@+id/action_fragment_X_to_fragment_Y"
+            app:destination="@id/fragment_Y" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Y"
+        android:name="com.talhakasikci.odev4.Fragment_Y"
+        android:label="fragment__y"
+        tools:layout="@layout/fragment__y" >
+        <action
+            android:id="@+id/action_fragment_Y_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>
