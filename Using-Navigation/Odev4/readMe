@@ -1,0 +1,1 @@
+I combined 5 different fragments into a single navHost. And I switched between these fragments with Navigation. In the last fragment, when the user presses the back button, it goes directly to the main fragment.
